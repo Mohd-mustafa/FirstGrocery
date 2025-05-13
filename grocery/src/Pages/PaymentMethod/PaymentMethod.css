@@ -1,0 +1,89 @@
+.payment-method-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;    
+}
+
+ .payment-methods{
+   flex: 1;
+   background-color: #ffffff;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);        
+   max-width: 300px;
+ }
+
+ .delivery-address,
+ .actual-address
+ {
+    align-items: center;
+    margin: 5px 10px 10px;
+  }
+
+.amount-details{
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    margin: 5px 2px;
+    width: 100%;
+    border:  1px solid #d4d1d1f9;
+}
+
+.cart-items p{
+    margin: 10px 10px;
+}
+
+.cart-menu-items{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+     border: 1px solid #eae8e8;
+
+ }
+
+.cart-menu-image{
+    width: 70px;
+    height:60px;
+}
+
+.cart-menu-details{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .cart-menu-fruit{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cart-menu-grams{
+    font-size: 12px;
+    color: #7d7a7a;
+}
+
+.cart-menu-price{
+    font-size: 12px;
+
+}
+
+.show-more-btn{
+    color:rgb(244, 12, 51);
+}
+
+.pay-now{
+     padding: 20px 20px;
+     width: 100%;
+     border: 1px solid #cbc5c5;
+     border-radius: 10px;
+     background-color: rgb(123, 173, 123);
+     color: white;
+     font-size: 20px;
+}

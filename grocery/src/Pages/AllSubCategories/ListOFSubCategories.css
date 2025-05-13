@@ -1,0 +1,108 @@
+/* Container for all subcategory cards */
+.subcategory-card-container {
+    display: flex;
+    flex-wrap: wrap;
+     gap: 20px;
+    padding: 20px;
+    margin-left: 50px;
+  }
+  
+  /* Individual subcategory card styling */
+  .subcategory-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the image vertically */
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 160px;
+    height: 250px;
+   }
+  
+  .subcategory-card:hover {
+    transform: translateY(-5px); /* Lifting effect */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+ 
+  
+  .subcategory-image {
+    width: 150px; /* Ensure image fits the container */
+    height: 120px; /* Ensure image maintains aspect ratio */
+}
+  
+  /* Content section for subcategory details */
+  .subcategory-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1; /* Takes up the rest of the space */
+    margin-top: 10px;
+  }
+  
+  .subcategory-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #2c3e50;
+    text-align: left; /* Ensure text is left-aligned */
+  }
+  
+  /* Actions section for buttons */
+  .subcategory-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .subcategory-btn-add, .subcategory-btn-delete {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .subcategory-btn-add {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .subcategory-btn-add:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .subcategory-btn-delete {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .subcategory-btn-delete:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .subcategory-card {
+      flex-direction: column;
+      align-items: center; /* Center image and content for smaller screens */
+    }
+  
+    .subcategory-image-wrapper {
+      margin-bottom: 10px; /* Add space below image on mobile */
+    }
+  
+    .subcategory-content {
+      align-items: center; /* Center content for mobile view */
+      text-align: center;
+    }
+  }
+  

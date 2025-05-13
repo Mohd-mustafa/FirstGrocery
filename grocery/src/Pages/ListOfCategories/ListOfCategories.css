@@ -1,0 +1,72 @@
+ .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between cards */
+    padding: 5px; /* Padding around the container */
+    justify-content: center; /* Center the cards horizontally */
+ }
+
+ .card {
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    overflow: hidden; /* Hide overflowing content */
+    width: 150px; /* Fixed width for cards */
+    height: 220px;
+    cursor: pointer;
+   }
+
+  .card-image {
+    width: 100%; /* Full width of the card */
+    height: 130px; /* Fixed height for images */
+    border-radius: 20px;
+   }
+
+   .card-image:hover{
+    transition: transform 0.3s;
+   }
+
+  /* Card title styles */
+.card-name {
+    font-size: 1rem; /* Font size for the title */
+    margin: 5px; /* Margin around the title */
+    color: #333; /* Dark text color */
+  }
+  .card-description {
+    font-size: 1rem; /* Font size for the description */
+    margin: 5px; /* Margin around the description */
+    color: #666; /* Gray text color */
+  }
+
+  /* Hover effects for cards */
+.card:hover {
+    transform: scale(1.0); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+
+  .button-section{
+    display: flex;
+    gap: 5px;
+  }
+
+  .btn-add, .btn-delete{
+    width: 100px;
+    padding: 10px;
+    font-size: 10px;
+    margin-top: 10px;
+    
+  }
+
+  .btn-add{
+    background-color: rgb(88, 182, 230);
+  }
+
+  .btn-delete{
+    background-color: rgb(239, 81, 81);
+  }
+   
+
+
+
+  

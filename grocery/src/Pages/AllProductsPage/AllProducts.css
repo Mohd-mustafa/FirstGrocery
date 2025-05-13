@@ -1,0 +1,161 @@
+.admin-product-container{
+  width: 100%;
+  height: 100vh;
+}
+  
+ .sidebar-all-products{
+  width: 100px; /* Change width as needed */
+  height: 100vh;
+  background-color: #d0cece; /* Dark background */
+  color: white;
+  transition: width 0.3s;
+  position: fixed;
+  top: 0;
+  margin-right: 60px;
+  }
+
+ .sidebar-nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin-top: 50px;
+}
+.sidebar-nav li {
+  padding: 12px; /* Space for each item */
+  display: flex; /* Flex for alignment */
+  align-items: center; /* Center vertically */
+  position: relative;
+}
+
+.sidebar-nav li:not(:last-child)::after{
+  content: "";
+  position:absolute;
+  left: 0;
+  right: 0; /* Align to the right */
+  bottom: 0; /* Position at the bottom */
+  height: 1px; /* Height of the line */
+  background-color: rgba(15, 1, 1, 0.2); /* Color of the line */
+  width: 100%;
+}
+ 
+
+.sidebar-nav li a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  display: flex; /* Flex for image and text */
+  align-items: center; /* Center image and text */
+}
+.sidebar-nav li img {
+  width: 50px; /* Icon size */
+  height: 50px; /* Icon size */
+  border-radius: 50%;
+  margin-right: 10px; /* Space between image and text */
+}
+.sidebar-nav li:hover {
+  background: linear-gradient(90deg,rgb(243, 190, 199),rgb(233, 135, 151)); /* Hover effect */
+ }
+ .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Keep gap between cards */
+  margin-left: 250px; /* Space for the sidebar */
+  background-color: #ecf0f1; /* Light background for contrast */
+  margin-top: 25px;
+  overflow-y: auto; /* Enable vertical scrolling */
+ }
+
+.main-content::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.admin-product-card {
+  background-color: #fff8f8;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s; /* Smooth scale transition */
+  width: 200px; /* Fixed width for cards */
+  height: 290px;
+  text-align: left; /* Center text */
+  padding: 8px; /* Unified padding */
+  margin: 0; /* Remove margin for cards */
+  
+}
+
+.admin-product-card img {
+  display: block; /* Make the image a block element */
+  margin: 10px auto; /* Center the image */
+  width: 150px; /* Responsive image */
+  height: 120px; /* Maintain aspect ratio */
+  border-radius: 20px;
+}
+
+.admin-product-card h4 {
+  font-size: 1em; /* Font size for title */
+  margin: 10px 0; /* Margin for spacing */
+  color: #333; /* Darker text color */
+}
+
+.admin-product-card p {
+  margin: 5px 0; /* Margin for spacing */
+  color: #777; /* Lighter color for quantity text */
+  font-size: 0.8em;
+}
+
+.price {
+  display: flex; /* Flex for price alignment */
+  flex-direction: row;
+  align-items: center; /* Center vertically */
+  margin-top: 10px; /* Space above price section */
+}
+
+.price p {
+  text-decoration: line-through; /* Strikethrough for old price */
+  font-weight: bold; /* Bold for the main price */
+  margin: 0 10px; /* Margin for spacing */
+  color: #999; /* Gray color for the old price */
+  font-size: 13px;
+}
+
+.price span {
+  font-size: 14px;
+  color: #e74c3c; /* Red color for price */
+}
+
+.admin-product-card:hover {
+  transform: scale(1.05); /* Scale up card on hover */
+}
+
+.button {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: row; /* Stack buttons vertically */
+  align-items: center; /* Align buttons to the right */
+  margin-top: 10px; /* Space above the button section */
+  gap: 10px;
+}
+
+.button button {
+  margin: 5px 0; /* Space between buttons */
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #3498db; /* Button background color */
+  color: #fff; /* Text color */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+.admin-btn-edit {
+  background-color: #2ecc71; /* Green background for Edit button */
+}
+
+.admin-btn-delete {
+  background-color: #e74c3c; /* Red background for Delete button */
+}
+
+.button button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+  transform: scale(1.05); /* Scale up button on hover */
+}
+
+.button button:active {
+  transform: scale(0.95); /* Scale down on click */
+}

@@ -1,0 +1,19 @@
+ 
+
+.create-subcategory-container {
+    width: 350px; /* Slightly wider form for better space */
+    height: 450px;
+    margin: 5px auto 50px; /* Center the form with more margin */
+    padding: 20px; /* More padding for the form container */
+    border: 1px solid #e2e8f0; /* Softer, subtle border */
+    border-radius: 12px; /* Smoothly rounded corners */
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow for better depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+h2{
+     text-align: center;
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 20px;
+}

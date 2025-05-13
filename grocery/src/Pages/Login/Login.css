@@ -1,0 +1,112 @@
+/* Center the login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Style the login form */
+.login-form {
+  width: 300px;
+  max-width: 400px;
+  background-color: #ffffff; /* White background for form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333333; /* Dark text for title */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555555; /* Muted text for labels */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #4caf50; /* Highlight with green */
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle green glow */
+}
+
+/* Button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #4caf50; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+button[type="submit"]:disabled {
+  background-color: #cccccc; /* Gray button when disabled */
+  cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Social login section */
+.social-login h3 {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Register link */
+.register-user {
+  margin-top: 20px;
+}
+
+.register-link {
+  color: #4caf50; /* Green link */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

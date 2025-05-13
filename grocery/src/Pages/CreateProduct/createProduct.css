@@ -1,0 +1,124 @@
+/* Overall Container Style */
+.add-product-container {
+   width: 600px;
+   height: 550px;
+   margin: 0 auto; /* Center the form with more margin */
+   padding: 20px; /* More padding for the form container */
+   border: 1px solid #e2e8f0; /* Softer, subtle border */
+   border-radius: 12px; /* Smoothly rounded corners */
+   background-color: #ffffff; /* White background for the form */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow for better depth */
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+ 
+ /* Heading Style 
+ 
+ /* Form Style */
+ .add-product-form {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+ }
+ 
+ /* Row and Column Layout */
+ .row {
+   display: flex;
+   gap: 5px;
+ }
+ 
+ .col {
+   flex: 1;
+ }
+ 
+ /* Form Group Style */
+ .form-group {
+  display: block;
+   }
+ 
+ .form-group label {
+   display: block;
+   font-weight: 500;
+   color: #555;
+ }
+ 
+ .form-group input,
+ .form-group textarea,
+ .form-group select {
+   width: 100%;
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   font-size: 1rem;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .form-group input:focus,
+ .form-group textarea:focus,
+ .form-group select:focus {
+   border-color: #007bff;
+   box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+   outline: none;
+ }
+ 
+ /* Textarea Style */
+ .form-group textarea {
+   resize: vertical;
+   min-height: 150px;
+ }
+ 
+ /* File Input Style */
+ .form-group input[type="file"] {
+   padding: 0;
+   border: none;
+ }
+ 
+ .image-preview {
+   margin-top: 5px;
+   border: 1px solid #ddd;
+   padding: 5px;
+   border-radius: 5px;
+   overflow: hidden;
+   text-align: center;
+ }
+ 
+ .image-preview img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 5px;
+ }
+ 
+ /* Submit Button Style */
+ .submit-button {
+   background: #007bff;
+   color: #fff;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1rem;
+   font-weight: 600;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ .submit-button:hover {
+   background: #0056b3;
+   transform: translateY(-2px);
+ }
+ 
+ .submit-button:active {
+   transform: translateY(0);
+ }
+ 
+ /* Message Style */
+ .success-message {
+   color: #28a745;
+   font-weight: 500;
+   text-align: center;
+ }
+ 
+ .error-message {
+   color: #dc3545;
+   font-weight: 500;
+   text-align: center;
+ }
+ 

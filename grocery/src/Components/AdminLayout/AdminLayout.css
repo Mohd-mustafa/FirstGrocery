@@ -1,0 +1,78 @@
+ .admin-dashboard{
+   display: flex;
+   height: 100vh;
+   font: 1em sans-serif;
+   
+  }
+
+  .admin-sidebar{
+    width: 220px;
+    height: fit-content;
+    background-color: #ffffff;
+    color: black; /* Light text color */
+    padding: 20px;
+    box-shadow: 2px 0 5px white; /* Subtle shadow for separation */
+    overflow-y: auto; /* Scroll if content overflows */
+    position: fixed;
+  }
+
+  .sidebar-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar-list {
+    margin: 10px 0; /* Space between menu items */
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .sidebar-list a{
+  text-decoration: none;
+  color: black; /* Text color */
+  font-size: 18px;
+  display: flex; /* Align icon and text */
+  align-items: center; /* Vertically align icon and text */
+  padding: 10px;
+  border-radius: 4px; /* Rounded corners */
+  gap: 5px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  .sidebar-list a:hover {
+    background-color: #a2c6eb; /* Highlight on hover */
+  }
+
+  .sidebar-list a.active {
+    background-color: #1abc9c; /* Active link color */
+    color: #fff; /* Active text color */
+  }
+
+  .sidebar-list .icon{
+      width: 20px;
+      height: 30px;
+  }
+
+  .admin-main-menu{
+    flex:1;
+    height: fit-content;
+    margin-left: 250px;
+    background-color: #ffffff; /* Light background for contrast */
+    padding: 20px;
+    overflow-y: auto; /* Scroll if content overflows */ 
+  }
+
+  @media (max-width: 768px) {
+    .admin-sidebar {
+      width: 100px; /* Narrower sidebar */
+      padding: 10px;
+    }
+  
+    .sidebar-list a {
+      font-size: 14px; /* Smaller text */
+      justify-content: center; /* Center content */
+    }
+  
+    .sidebar-list a span {
+      display: none; /* Hide text on smaller screens */
+    }
+  }

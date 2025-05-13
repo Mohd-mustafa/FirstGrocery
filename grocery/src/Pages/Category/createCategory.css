@@ -1,0 +1,105 @@
+/* src/components/CategoryForm.css */
+
+ 
+  
+  .category-form-container {
+    width: 400px; /* Slightly wider form for better space */
+    height: 500px;
+    margin: 10px auto; /* Center the form with more margin */
+    padding: 20px; /* More padding for the form container */
+    border: 1px solid #e2e8f0; /* Softer, subtle border */
+    border-radius: 12px; /* Smoothly rounded corners */
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow for better depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .category-form-container:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  }
+  
+  .category-form-container h2 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 10px; /* More space below the heading */
+    color: #333; /* Darker heading text color */
+    font-size: 20px; /* Larger font size for heading */
+    font-weight: 600; /* Semi-bold for the heading */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Increased space between form groups */
+  }
+  
+  .form-group label {
+    display: block; /* Make label block element */
+    margin-bottom: 10px; /* More space below the label */
+    font-weight: 500; /* Slightly bolder label */
+    color: #4a5568; /* Darker color for label */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%; /* Full width of input and textarea */
+    padding: 12px 15px; /* Padding inside input and textarea */
+    border: 1px solid #cbd5e0; /* Softer border color */
+    border-radius: 6px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+    font-size: 16px; /* Font size for input and textarea */
+    color: #2d3748; /* Darker text color inside input and textarea */
+    background-color: #edf2f7; /* Slightly off-white background */
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transition for border and background */
+    cursor: pointer;  
+}
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #3182ce; /* Blue border on focus */
+    background-color: #fff; /* White background on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3); /* Soft shadow to indicate focus */
+  }
+  
+  .form-group textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 120px; /* Minimum height for textarea */
+  }
+  
+  button[type='submit'] {
+    width: 100%; /* Full width of the button */
+    padding: 10px; /* Padding for the button */
+    background-color: #38a169; /* Vibrant green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 18px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: 600; /* Bold text */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    margin-top: 10px; /* More space above the button */
+  }
+  
+  button[type='submit']:hover {
+    background-color: #2f855a; /* Darker green on hover */
+    transform: translateY(-3px); /* Lift on hover */
+  }
+  
+  button[type='submit']:active {
+    background-color: #276749; /* Even darker green on click */
+    transform: translateY(0); /* Reset lift on click */
+  }
+  
+  .error-message, .success-message {
+    text-align: center; /* Center align the messages */
+    font-size: 16px; /* Font size for the message */
+    margin-bottom: 10px; /* Space below the message */
+  }
+  
+  .error-message {
+    color: #e53e3e; /* Red color for error messages */
+  }
+  
+  .success-message {
+    color: #38a169; /* Green color for success messages */
+  }
+  
